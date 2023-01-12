@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [https://antoru-stats-preview-card-component.netlify.app/](https://antoru-stats-preview-card-component.netlify.app/)
 
 ## My process
 
