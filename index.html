@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+
+  <main class="card">
+
+    <div class="card__txt">
+
+      <h1 class="card__txt__title">
+        Get <span>insights</span> that help your business grow.
+      </h1>
+      <p class="card__txt__p">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and
+        overall efficiency.
+      </p>
+
+      <div class="card__txt__data">
+
+        <div class="card__txt__data__item">
+
+          <div class="card__txt__data__item__number">
+            10k+
+          </div>
+
+          <div class="card__txt__data__item__desc">
+            COMPANIES
+          </div>
+
+        </div>
+
+        <div class="card__txt__data__item">
+
+          <div class="card__txt__data__item__number">
+            314
+          </div>
+
+          <div class="card__txt__data__item__desc">
+            TEMPLATES
+          </div>
+
+        </div>
+
+        <div class="card__txt__data__item">
+
+          <div class="card__txt__data__item__number">
+            12M+
+          </div>
+
+          <div class="card__txt__data__item__desc">
+            QUERIES
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+    <div class="card__img">
+
+      <picture>
+        <!-- img desktop -->
+        <source srcset="/images/image-header-desktop.jpg" media="(min-width: 768px)">
+        <!-- img mobile -->
+        <source srcset="images/image-header-mobile.jpg" media="(max-width: 767px)">
+        <!-- reinserire img desktop -->
+        <img src="/images/image-header-desktop.jpg" alt="young womens work at the office">
+      </picture>
+
+    </div>
+
+  </main>
+
+
+</body>
+
+</html>

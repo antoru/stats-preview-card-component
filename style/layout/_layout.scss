@@ -1,0 +1,139 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.4rem;
+}
+
+.card {
+
+    width: 100%;
+    max-width: 111rem;
+    border-radius: .8rem;
+    display: flex;
+    box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.203087);
+
+    @include small_device {
+        flex-direction: column-reverse;
+    }
+
+    &__txt {
+
+        background-color: $yankeesBlue;
+        
+        @include big_device {
+            flex-basis: 51.3514%;
+            flex-grow: 0;
+            flex-shrink: 0;
+            padding: 7.1rem 9.5rem 5.9rem 7.1rem;
+            border-radius: .8rem 0 0 .8rem;
+        }
+
+        @include small_device {
+            flex-basis: 100%;
+            flex-grow: 0;
+            flex-shrink: 0;
+            text-align: center;
+            padding: 4rem 3.15rem 3.2rem;
+            border-radius: 0 0 .8rem .8rem;
+        }
+
+        &__title {
+            @include heading;
+
+            span {
+                color: $richLilac;
+            }
+        }
+
+        &__p {
+            @include body;
+
+            @include big_device {
+                margin-top: 2.5rem;
+            }
+
+            @include small_device {
+                margin-top: 1.6rem;
+            }
+            
+        }
+
+        &__data {
+
+            @include big_device {
+                display: flex;
+                margin-top: 7.2rem;
+            }
+            @include small_device {
+                margin-top: 4rem;
+            }
+
+            &__item {
+
+                &:not(:last-child) {
+                    @include big_device {
+                        margin-right: 6rem;
+                    }
+                    @include small_device {
+                        margin-bottom: 2.4rem;
+                    }
+                }
+
+                &__number {
+                    @include numbers;
+                }
+
+                &__desc {
+                    @include sub_numbers;
+                    margin-top: 0.2rem;
+                }
+
+            }
+
+        }
+
+    }
+
+    &__img {
+
+        background-color: $richLilac;
+        
+
+        @include big_device {
+            flex-basis: 48.6486%;
+            flex-grow: 0;
+            flex-shrink: 0;
+            border-radius: 0 .8rem .8rem 0;
+        }
+
+        @include small_device {
+            flex-basis: 100%;
+            flex-grow: 0;
+            flex-shrink: 0;
+            border-radius: .8rem .8rem 0 0;
+        }
+        
+
+        img {
+
+            //@include img_responsive;
+            
+            opacity: .75;
+            mix-blend-mode:multiply;
+
+            @include big_device {
+                @include img_cover;
+                border-radius: 0 .8rem .8rem 0;
+            }
+
+            @include small_device {
+                @include img_responsive;
+                border-radius: .8rem .8rem 0 0;
+            }
+        }
+    }
+
+}

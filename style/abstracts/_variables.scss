@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+//fonts
+$mainFont:'Inter', sans-serif;;
+$secondaryFont:'Lexend Deca', sans-serif;
+
+// colors
+$richLilac: #AB5CDB;
+$richBlack: #0A0C1C;
+$yankeesBlue:#1B1937;
+
+$backgroundPage: $richBlack;
+
+///breakpoint
+$breakpoint-desktop-min: 768px;
+$breakpoint-mobile-max: 767px;
+
+// @media(min-width:$breakpoint-desktop-min){}
+// @media(max-width:$breakpoint-mobile-max){}
